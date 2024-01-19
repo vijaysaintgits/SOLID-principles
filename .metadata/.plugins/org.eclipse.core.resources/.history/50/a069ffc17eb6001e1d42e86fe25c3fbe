@@ -1,0 +1,13 @@
+package com.solid.services;
+
+import com.solid.interfaces.BookingService;
+
+public class RestaurantBookingService implements BookingService {
+
+	@Override
+	public void book(int identifier) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,19 @@
+package com.solid.services;
+
+import com.solid.entity.Hotel;
+import com.solid.interfaces.BookingService;
+
+public class HotelBookingService implements BookingService {
+
+	 private Hotel hotel;
+
+	    public HotelBookingService(Hotel hotel) {
+	        this.hotel = hotel;
+	    }
+
+	    @Override
+	    public void book(int roomNumber) {
+	        hotel.bookRoom(roomNumber);
+	    }
+
+}

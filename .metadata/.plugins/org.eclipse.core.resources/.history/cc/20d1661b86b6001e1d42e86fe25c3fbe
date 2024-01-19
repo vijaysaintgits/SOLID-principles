@@ -1,0 +1,12 @@
+package com.solid.entity;
+
+import com.solid.interfaces.Bookable;
+
+public class Hotel implements Bookable {
+	
+	  public void bookRoom(int roomNumber) {
+	        // Logic to book a room
+	        System.out.println("Room " + roomNumber + " booked in the hotel.");
+	    }
+
+}

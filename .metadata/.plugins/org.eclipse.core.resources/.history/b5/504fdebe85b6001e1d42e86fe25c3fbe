@@ -1,0 +1,10 @@
+package com.solid.entity;
+
+public class Hotel {
+	
+	  public void bookRoom(int roomNumber) {
+	        // Logic to book a room
+	        System.out.println("Room " + roomNumber + " booked in the hotel.");
+	    }
+
+}

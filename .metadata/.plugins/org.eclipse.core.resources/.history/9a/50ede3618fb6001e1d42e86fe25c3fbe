@@ -1,0 +1,28 @@
+package com.solid.entity;
+
+import com.solid.interfaces.Bookable;
+
+public class Hotel extends Hospitality implements Bookable {
+	
+	String hotelId;
+	String hotelType;
+
+	public Hotel(String hotelId, String hotelType,String name, String place) {
+		super();
+		this.hotelId = hotelId;
+		this.hotelType = hotelType;
+		this.name = name;
+		this.place = place;
+	}
+
+	@Override
+	public void book(int identifier) {
+		System.out.println("Room " + identifier + " booked in the hotel.");
+		System.out.println("Hotel type is " + this.hotelType);
+		System.out.println("Hotel name is" + this.name);
+		System.out.println("Hotel place is" + this.place);
+		
+		
+	}
+
+}

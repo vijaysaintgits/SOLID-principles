@@ -1,0 +1,16 @@
+package com.solid.entity;
+
+import com.solid.interfaces.Bookable;
+
+public class Restaurant extends Hospitality implements Bookable  {
+	 
+
+	@Override
+	public void book(int identifier) {
+		
+		System.out.println("Table " + identifier + " reserved in the restaurant.");
+	
+		
+	}
+
+}

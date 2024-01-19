@@ -1,0 +1,12 @@
+package com.solid.entity;
+
+import com.solid.interfaces.Bookable;
+
+public class Restaurant implements Bookable {
+	
+	 public void reserveTable(int tableNumber) {
+	        // Logic to reserve a table
+	        System.out.println("Table " + tableNumber + " reserved in the restaurant.");
+	    }
+
+}

@@ -1,0 +1,15 @@
+package com.solid.services;
+
+public class BookingSystem {
+	
+	 private BookingService bookingService;
+
+	    public BookingSystem(BookingService bookingService) {
+	        this.bookingService = bookingService;
+	    }
+
+	    public void makeBooking(int identifier) {
+	        bookingService.book(identifier);
+	    }
+
+}

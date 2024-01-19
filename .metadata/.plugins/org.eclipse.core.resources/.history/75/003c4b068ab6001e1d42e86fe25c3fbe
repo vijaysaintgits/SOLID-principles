@@ -1,0 +1,15 @@
+package com.solid.entity;
+
+import com.solid.interfaces.Bookable;
+
+public class Hotel implements Bookable {	
+	  
+
+	@Override
+	public void book(int identifier) {
+		System.out.println("Room " + identifier + " booked in the hotel.");
+	
+		
+	}
+
+}

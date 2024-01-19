@@ -1,0 +1,19 @@
+package com.solid.services;
+
+import com.solid.entity.Restaurant;
+import com.solid.interfaces.BookingService;
+
+public class RestaurantBookingService implements BookingService {
+
+	 private Restaurant restaurant;
+
+	    public RestaurantBookingService(Restaurant restaurant) {
+	        this.restaurant = restaurant;
+	    }
+
+	    @Override
+	    public void book(int tableNumber) {
+	        restaurant.reserveTable(tableNumber);
+	    }
+
+}
